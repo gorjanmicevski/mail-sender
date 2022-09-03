@@ -1,0 +1,23 @@
+mail-sender:
+  host: 'smtp.gmail.com'
+  port: 587
+#  username: 'cryptoriver3@gmail.com'
+#  password: 'dwdoaplpgptjtkna'
+#  username: 'teslacoinapp@gmail.com'
+#  password: 'annsxdrxyftnupit'
+  protocol: 'smtp'
+  auth: true
+  starttls-enable: true
+  debug: true
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/emailStore
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
